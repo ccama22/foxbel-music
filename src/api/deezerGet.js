@@ -6,8 +6,8 @@ const searchDeezer = async () => {
     const response = await deezerApi.get(`/search`, {
       params: { q: "*" },
       headers: {
-        "X-RapidAPI-Key": "cd577446dbmsha9485ca8c247ba3p1a4a09jsnf9023ef3d4b8",
-        "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+        "X-RapidAPI-Key": "",
+        "X-RapidAPI-Host": "",
       },
     });
 
