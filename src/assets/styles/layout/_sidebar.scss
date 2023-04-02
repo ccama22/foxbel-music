@@ -1,0 +1,100 @@
+.sidebar_container {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+
+  main {
+    position: relative;
+    width: 100%;
+    padding: 30px 40px;
+  }
+  .sidebar {
+    background: $color-sidebar;
+    color: #fff;
+    width: 330px;
+    transition: all 0.5s;
+  }
+
+  @media screen and (max-width: 908px) {
+    .sidebar {
+      position: relative;
+      background: green;
+      display: none;
+    }
+    .top_section {
+      display: none;
+    }
+    .account {
+      display: none;
+    }
+  }
+
+  .top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .bars {
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .bars:hover {
+    cursor: pointer;
+  }
+  .my_library {
+    padding-left: 0.7em;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .my_playlist {
+    padding-left: 0.7em;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .link {
+    display: flex;
+    color: #fff;
+    padding: 10px 0px;
+    gap: 15px;
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: #e86060;
+    transition: all 0.5s;
+  }
+  .active {
+    color: #e86060;
+  }
+  .active::before {
+    content: "";
+    left: 0;
+    position: relative;
+    background-color: white;
+    width: 3px;
+    height: 22px;
+  }
+  .no_active {
+    color: #e86060;
+  }
+  .no_active::before {
+    content: "";
+    left: 0;
+    position: relative;
+    width: 3px;
+    height: 22px;
+  }
+  .icon,
+  .link_text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

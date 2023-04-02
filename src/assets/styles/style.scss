@@ -1,0 +1,13 @@
+/* GLOBALS */
+@import "./global/variables";
+@import "./global/base";
+
+//PAGES
+@import "./pages/recents";
+@import "./pages/Musics";
+
+/*LAYOUTS*/
+@import "./layout/navbar";
+@import "./layout/sidebar";
+/* COMPONENTES */
+@import "./components/app";

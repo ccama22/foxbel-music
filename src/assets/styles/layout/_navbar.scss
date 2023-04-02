@@ -1,0 +1,45 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  .search {
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #828282;
+    width: 524px;
+    height: 36px;
+    border-radius: 100px;
+    input[type="text"] {
+      border: none;
+      outline: none;
+      width: 92%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+  }
+  .account {
+    display: flex;
+    gap: 12px;
+    color: $user-account;
+  }
+  .nav_select {
+    display: none;
+  }
+}
+@media screen and (max-width: 908px) {
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    gap: 10px;
+  }
+
+  .nav_select {
+    display: block !important;
+  }
+}
